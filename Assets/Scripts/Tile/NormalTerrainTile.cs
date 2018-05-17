@@ -53,7 +53,6 @@ public class NormalTerrainTile : BaseTerrainTile
             if (!IsUseToggle)
             {
                 heightMapReader = new TextHeightMapReader(www.text);
-                multiplier = 10;
             }
             else
             {

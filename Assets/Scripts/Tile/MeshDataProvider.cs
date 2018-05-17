@@ -51,7 +51,7 @@ public class MeshDataProvider
         {
             for (int x = 0; x < width; ++x)
             {
-                meshData.Vertices[vertexIndex] = new Vector3(x / (float)width * size, HeightMap[x,y] * size / 255, y / (float)height * size) + offset;
+                meshData.Vertices[vertexIndex] = new Vector3(x / (float)width * size, HeightMap[x,y], y / (float)height * size) + offset;
                 meshData.UVS[vertexIndex] = new Vector2(x / (float)width, y / (float)height);
                 meshData.Colors[vertexIndex] = color;
 

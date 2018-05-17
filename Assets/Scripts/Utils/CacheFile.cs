@@ -39,6 +39,9 @@ public class CacheFile
         {
             //save to file
             File.WriteAllBytes(filePath, www.bytes);
+        } else
+        {
+            Debug.Log("Error while download file : " + www.error + " - url - " + www.url);
         }
     }
 }
